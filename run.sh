@@ -1,5 +1,5 @@
 #!/bin/bash
-python pull_events.py
+python3 pull_events.py
 for filename in $(ls "./"); do
   echo $filename
   if [[ $filename == *".txt" ]]; then

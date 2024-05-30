@@ -53,5 +53,5 @@ if __name__ == '__main__':
     base_url = os.environ['KEYCLOAK_URL']
     realm = os.environ['KEYCLOAK_REALM']
     event = os.environ['EVENT_NAME']
-    days = os.environ['DAYS']
-    log_dump(client, token, base_url, realms, events, days)
+    days = int(os.environ['DAYS'])
+    log_dump(client, token, base_url, realm, event, days)
