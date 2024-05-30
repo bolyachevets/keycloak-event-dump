@@ -36,7 +36,7 @@ def log_dump(client, token, base_url, realm, event, days):
         url = base_url2 + "/events?type=" + event + "&" + "dateFrom=" + from_date.strftime('%Y-%m-%d') + "&dateTo=" + to_date.strftime('%Y-%m-%d') + "&max=" + str(max_val)
         user_resp = requests.request("GET", url, headers=headers)
         if user_resp.status_code == 200:
-            with open('events_' + from_date.strftime('%Y-%m-%d') + '.txt', 'w') as f:
+            with open('events_' + from_date.strftime('%Y-%m-%d') + '.jsonl', 'w') as f:
                 res_json = user_resp.json()
                 for e in res_json:
                     json.dump(e, f)
