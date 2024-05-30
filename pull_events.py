@@ -34,7 +34,7 @@ def log_dump(client, token, base_url, realm, event, days):
     from_date = t - d
     to_date = t
     print("processing log events...")
-    while True and day < days:
+    while day < days:
         url = base_url2 + "/events?type=" + event + "&" + "dateFrom=" + from_date.strftime('%Y-%m-%d') + "&dateTo=" + to_date.strftime('%Y-%m-%d') + "&max=" + str(max_val)
         user_resp = requests.request("GET", url, headers=headers)
         if user_resp.status_code == 200:
@@ -49,7 +49,6 @@ def log_dump(client, token, base_url, realm, event, days):
             from_date = from_date - d
 
 if __name__ == '__main__':
-    # TODO: replace vars
     client = os.environ['CLIENT_NAME']
     token = os.environ['CLIENT_TOKEN']
     base_url = os.environ['KEYCLOAK_URL']
