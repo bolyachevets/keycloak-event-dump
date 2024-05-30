@@ -2,6 +2,7 @@ import requests
 import os
 import base64
 from datetime import datetime, timedelta
+import pytz
 import json
 
 def log_dump(client, token, base_url, realm, event, days):
@@ -26,7 +27,8 @@ def log_dump(client, token, base_url, realm, event, days):
     base_url2 = base_url + "/auth/admin/realms/" + realm
 
     max_val = 100000
-    t = datetime.now()
+    pst = pytz.timezone('US/Pacific')
+    t = datetime.now(pst)
     d = timedelta(days=1)
     day = 0
     from_date = t - d
