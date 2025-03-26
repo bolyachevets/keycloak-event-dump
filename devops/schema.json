@@ -123,6 +123,11 @@
       "name": "previous_first_name",
       "type": "STRING",
       "mode": "NULLABLE"
+      },
+      {
+      "name": "credential_type",
+      "type": "STRING",
+      "mode": "NULLABLE"
       }
     ]
   }
