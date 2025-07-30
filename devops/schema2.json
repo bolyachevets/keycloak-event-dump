@@ -1,139 +1,119 @@
 [
   {
-    "name": "id",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "time",
-    "type": "INTEGER",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "type",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "realmId",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "clientId",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "userId",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "sessionId",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "ipAddress",
-    "type": "STRING",
-    "mode": "REQUIRED"
-  },
-  {
-    "name": "details",
-    "type": "RECORD",
-    "mode": "NULLABLE",
     "fields": [
       {
-        "name": "identity_provider",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "redirect_uri",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "consent",
-        "type": "STRING",
-        "mode": "REQUIRED"
-      },
-      {
-        "name": "identity_provider_identity",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "code_id",
-        "type": "STRING",
-        "mode": "REQUIRED"
-      },
-      {
-        "name": "username",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "register_method",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "email",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "auth_method",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "auth_type",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "response_type",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "response_mode",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "custom_required_action",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "remember_me",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "context",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "updated_first_name",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
-        "name": "previous_first_name",
-        "type": "STRING",
-        "mode": "NULLABLE"
-      },
-      {
+        "mode": "NULLABLE",
         "name": "credential_type",
-        "type": "STRING",
-        "mode": "NULLABLE"
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "identity_provider_identity",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "identity_provider",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "custom_required_action",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "auth_method",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "auth_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "code_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "consent",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "redirect_uri",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "response_type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "identity_provider_broker_session_id",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "remember_me",
+        "type": "BOOLEAN"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "username",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "response_mode",
+        "type": "STRING"
       }
-    ]
+    ],
+    "mode": "NULLABLE",
+    "name": "details",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "ipAddress",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "sessionId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "userId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "clientId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "realmId",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "id",
+    "type": "STRING"
   }
 ]

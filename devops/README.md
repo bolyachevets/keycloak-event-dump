@@ -29,3 +29,24 @@ bq mk --table \
 ```
 
 - Make sure `keycloak_schema.json` is in your current working directory.
+
+## External Schema Changes
+
+If log schema changes you can create a temp table to autodetect new schema:
+
+```sh
+bq load \
+  --autodetect \
+  --source_format=NEWLINE_DELIMITED_JSON \
+  c4hnrd-tools:keycloak_event_log.temp_table \
+  gs://keycloak-event-logs/events_2025-07-28.jsonl
+```
+
+You can load the autodetected schema via:
+
+```sh
+bq show --schema --format=prettyjson \
+c4hnrd-tools:keycloak_event_log.temp_table > autodetected_schema.json
+```
+
+autodetected_schema.json can be used to create new table
